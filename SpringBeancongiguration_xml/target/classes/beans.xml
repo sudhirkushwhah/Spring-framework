@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="libId" class="com.springframwork.bean.Liberary">
+    <property name="bookName" value="Data Structure"></property>
+    <property name="bookNumber" value="1"></property>
+    <property name="bookPrice" value="500"></property>
+    </bean>
+    
+    <bean id="libId2" class="com.springframwork.bean.Liberary">
+    <property name="bookName" value="Compiler design"></property>
+    <property name="bookNumber" value="5"></property>
+    <property name="bookPrice" value="700"></property>
+    </bean>
+
+</beans>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="eleId" class="com.springframwork.ElectricStore">
+    <property name="mobilePhone" value="iphone"></property>
+    <property name="mobileModel" value="17" ></property>
+    <property name="price" value="70000"></property>
+    </bean>
+    
+    
+        <bean id="eleId2" class="com.springframwork.ElectricStore">
+    <property name="mobilePhone" value="Vivo"></property>
+    <property name="mobileModel" value="v29Pro" ></property>
+    <property name="price" value="40000"></property>
+    </bean>
+    
+        <bean id="eleId3" class="com.springframwork.ElectricStore">
+    <property name="mobilePhone" value="iphone"></property>
+    <property name="mobileModel" value="17pro" ></property>
+    <property name="price" value="150000"></property>
+    </bean>
+
+
+
+
+</beans>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="penId" class="com.springframwork.Pens">
+    <property name="penName" value="flair"></property>
+    <property name="numberOfPens" value="10"></property>
+    <property name="penPrice" value="20"></property>
+    </bean>
+    
+    <bean id="penId2" class="com.springframwork.Pens">
+    <property name="penName" value="Link"></property>
+    <property name="numberOfPens" value="10"></property>
+    <property name="penPrice" value="100"></property>
+    </bean>
+    
+    <bean id="penId3" class="com.springframwork.Pens">
+    <property name="penName" value="Ballpoint"></property>
+    <property name="numberOfPens" value="100"></property>
+    <property name="penPrice" value="1000"></property>
+   
+    </bean>
+   
+
+</beans>
