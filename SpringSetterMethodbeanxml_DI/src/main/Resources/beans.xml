@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean class="com.kodewala.beans.Collage" id="colId">
+    <property name="subName" value="Compiler design"></property>
+    <property name="subCode" value="KCS125"></property>
+    <property name="students" ref="stuId"></property>
+    </bean>
+    
+    <bean class="com.kodewala.beans.Students" id="stuId">
+    <property name="stuName"></property>
+    <property name="stuId"></property>
+    </bean>
+
+</beans>

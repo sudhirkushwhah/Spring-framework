@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean class="com.kodewala.beans.Liberary" id="libId">
+    <property name="lib_Name" value="Kodewala"></property>
+    <property name="lib_location" value="Bengloure"></property>
+    <property name="books" ref="bookId"></property>
+    </bean>
+    
+    <bean class="com.kodewala.beans.Books" id="bookId">
+    <property name="books_name" value="Java"></property>
+    <property name="books_code" value="J245"></property>
+    <property name="books_price" value="460"></property>
+    </bean>
+
+</beans>
