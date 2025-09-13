@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="com.spring.beans.Battery" id="batId">
+    <property name="battery_Brand" value="Eastman"></property>
+    <property name="battery_Price" value="22000.00"></property>
+    <property name="property" ref="proId"></property>
+    </bean>
+    
+    <bean class="com.spring.beans.Property" id="proId">
+    <property name="batter_Capacity" value="240AH"></property>
+    <property name="battery_Warrenty" value="36 Months"></property>
+    </bean>
+
+</beans>

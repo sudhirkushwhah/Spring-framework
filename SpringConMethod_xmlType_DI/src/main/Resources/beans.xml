@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean class="com.spring.beans.BatteryItem" id="batId">
+    <constructor-arg value="Advon"></constructor-arg>
+    <constructor-arg value="24000.000"></constructor-arg>
+    <constructor-arg ref="proId"></constructor-arg>
+    </bean>
+    
+    <bean class="com.spring.beans.Property" id="proId">
+    <constructor-arg value="220AH"></constructor-arg>
+    <constructor-arg value="36 Months"></constructor-arg>
+    </bean>
+
+</beans>
