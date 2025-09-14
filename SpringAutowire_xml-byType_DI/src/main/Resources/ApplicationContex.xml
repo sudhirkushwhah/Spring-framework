@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.spring.beans.Employee" id="empId" autowire="byType">
+    <property name="emp_Id" value="452"></property>
+    <property name="emp_Name" value="Utkarsh"></property>
+   
+    </bean>
+    
+    <bean class="com.spring.beans.ITShell" id="itShell" autowire="byType">
+    <property name="department" value="Devops"></property>
+    <property name="empa_Id" value="25"></property>
+   
+    </bean>
+    
+    <bean class="com.spring.beans.TestingShell" id="testingShell">
+    <property name="total_emp" value="10000"></property>
+    <property name="department_Name" value="Tester"></property>
+    </bean>
+
+</beans>

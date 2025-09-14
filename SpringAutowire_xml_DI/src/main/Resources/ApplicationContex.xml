@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class="com.spring.beans.Liberary" id="libId">
+   <property name="lib_Name" value="kurukchethra"></property>
+   <property name="lib_city" value="Kushinagar"></property>
+   <property name="books" ref="bookId"></property>
+   </bean>
+   
+   <bean class="com.spring.beans.Books" id="bookId">
+   <property name="book_type" value="12th"></property>
+   <property name="numberOfbooks" value="225"></property>
+   </bean>
+
+</beans>

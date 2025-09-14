@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.spring.beans.School" id="schId" autowire="byName">
+    <property name="sch_Name" value="Sanskar Sentral Academy"></property>
+    <property name="school_Location" value="Fazilnagar"></property>
+   
+    </bean>
+    
+    <bean class="com.spring.beans.Labs" id="labs">
+    <property name="numberOfLabs" value="2"></property>
+    <property name="lab_Name" value="1"></property>
+    <property name="lab_Capacity" value="45"></property>
+    </bean>
+
+</beans>
